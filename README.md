@@ -1,6 +1,10 @@
 # Nomad Cyclist Problem
-![A cycling route along the ancient Silk Road](./images/ancient-silk-road-path.png)
-A variation of Traveling Salesman Problem to help plan long Cycling Tours.
+
+<a href="https://medium.com/p/c0c6db8bb217" target="_blank">
+    <img src="./images/ancient-silk-road-path.png" alt="A cycling route along the ancient Silk Road">
+</a>
+
+**[Read full article](https://medium.com/p/c0c6db8bb217)** - A variation of Traveling Salesman Problem to help plan long Cycling Tours. 
 
 ## Getting Started
 Clone this project
