@@ -162,12 +162,15 @@ def run(distMatrixFile):
     # now we have shortest paths in 2 parts. let's combine them
     wholePath = newPathA + [ p+6 for p in newPathB ]
 
+    D = df.values.tolist()
+
     print('Shortest Path for our Cycling Tour:')
-    table, citiesVisited = calcPathStats(distMat, wholePath, cityNames) # distMat was the original distance matrix
+    # instead of D we can use distMat variable too, but that is in meters
+    table, citiesVisited = calcPathStats(D, wholePath, cityNames) # distMat was the original distance matrix
     printPath(table, citiesVisited)
-    
+
     return wholePath
 
 if __name__ == "__main__":
-    distMatrixFile = './backup/matrix-2020-10-0816:22:43.952927.json'
+    distMatrixFile = './data/matrix-2020-10-0816:22:43.952927.json'
     run(distMatrixFile)
